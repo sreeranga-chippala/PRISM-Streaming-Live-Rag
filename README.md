@@ -931,6 +931,20 @@ updates the system when new events arrive.
 
 This agent layer is designed to support assessment and interview
 scenarios where continuous session monitoring is required.
+
+## Research Scope : 
+
+RESEARCH PAPERS
+
+1. Su, W., Tang, Y., Ai, Q., Wu, Z. & Liu, Y., DRAGIN: Dynamic Retrieval Augmented Generation based on the Real-time Information Needs of Large Language Models, Proceedings of the 62nd Annual Meeting of the Association for Computational Linguistics (ACL), Vol. 1, pp. 12991–13013, 2024. DOI: 10.18653/v1/2024.acl-long.702.
+
+2. Sankaradas, M., Rajendran, R. K. & Chakradhar, S. T., StreamingRAG: Real-time Contextual Retrieval and Generation Framework, Workshop on AI For Systems (AI4Sys ’24), ACM, 2024. DOI: 10.48550/arXiv.2501.14101.
+
+OUR NOVEL IDEA
+
+Streaming Live RAG — Combining adaptive retrieval timing,
+multi-intent handling, hybrid retrieval, delta retrieval,
+and continuous answer refinement for streaming context.
 ---
 
 # 16. Expected Use Cases
