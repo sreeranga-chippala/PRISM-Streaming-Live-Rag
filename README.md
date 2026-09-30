@@ -905,6 +905,32 @@ Session state allows the system to maintain relevant conversational context acro
 
 The system exposes grounding, citation, retrieval, latency, and telemetry information for evaluating the behavior of the RAG pipeline.
 
+#### Agentic Monitoring
+
+The system includes an event-driven **MonitorAgent** implemented using
+LangGraph to continuously observe the live interaction and maintain
+session-level monitoring state.
+
+The MonitorAgent follows an:
+
+**Observe → Decide → Act → Continue Monitoring**
+
+workflow.
+
+It processes monitoring events such as:
+
+- Camera heartbeat
+- Page heartbeat / focus status
+- Browser connection signals
+- Session activity
+- IP consistency signals
+- Monitoring flags
+
+The agent maintains the monitoring state throughout the session and
+updates the system when new events arrive.
+
+This agent layer is designed to support assessment and interview
+scenarios where continuous session monitoring is required.
 ---
 
 # 16. Expected Use Cases
@@ -1047,8 +1073,8 @@ AI Disclosure Form :
 | Dockerfile | Complete |
 | Docker Compose configuration | Complete |
 | Project documentation | Complete |
-| Presentation file/link | Add final PPT link |
-| Demo video link | Add final video link |
+| Presentation file/link | Complete |
+| Demo video link | Complete |
 | Final Git tag | `PRISM_GENAI_HACKATHON_Y2026` |
 
 ---
