@@ -1048,6 +1048,8 @@ The video demonstrates the working prototype and the primary Streaming Live RAG 
 | Demo video link | Add final video link |
 | Final Git tag | `PRISM_GENAI_HACKATHON_Y2026` |
 
+---
+
 # 23. Project Status
 
 ```text
