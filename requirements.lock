@@ -1,0 +1,19 @@
+# Reproducible direct-dependency lock for the Python 3.12 container.
+# Transitive wheels may still be resolved by pip; regenerate with pip-compile
+# when a fully hash-pinned environment is required.
+fastapi==0.115.0
+uvicorn[standard]==0.30.6
+pydantic==2.9.2
+python-dotenv==1.0.1
+requests==2.32.3
+numpy==1.26.4
+scikit-learn==1.4.2
+PyMuPDF==1.24.10
+sentence-transformers==3.1.1
+faiss-cpu==1.8.0.post1
+google-genai==1.0.0
+streamlit==1.38.0
+pytest==8.3.3
+httpx==0.27.2
+langgraph==1.0.0
+langchain-core==1.0.0

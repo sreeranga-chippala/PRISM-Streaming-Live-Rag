@@ -1,0 +1,53 @@
+services:
+
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: api
+    image: ${PRISM_API_IMAGE:-ghcr.io/sreeranga-chippala/streaming-live-rag-api:latest}
+    restart: unless-stopped
+    environment:
+      PYTHONPATH: /app
+      GEMINI_API_KEY: ${GEMINI_API_KEY:-}
+      GEMINI_MODEL: ${GEMINI_MODEL:-gemini-3.8-flash}
+      TRUST_PROXY_HEADERS: ${TRUST_PROXY_HEADERS:-false}
+    command:
+      [
+        "python",
+        "-m",
+        "uvicorn",
+        "api.main:app",
+        "--host",
+        "0.0.0.0",
+        "--port",
+        "8000"
+      ]
+    ports:
+      - "8000:8000"
+    healthcheck:
+      test:
+        [
+          "CMD",
+          "python",
+          "-c",
+          "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8000/health', timeout=3)"
+        ]
+      interval: 15s
+      timeout: 5s
+      retries: 5
+      start_period: 120s
+
+  frontend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: frontend
+    environment:
+      PRISM_API_URL: http://api:8000
+      PRISM_BROWSER_API_URL: ${PRISM_BROWSER_API_URL:-http://localhost:8000}
+    depends_on:
+      api:
+        condition: service_healthy
+    ports:
+      - "8501:8501"
