@@ -1048,86 +1048,7 @@ The video demonstrates the working prototype and the primary Streaming Live RAG 
 | Demo video link | Add final video link |
 | Final Git tag | `PRISM_GENAI_HACKATHON_Y2026` |
 
----
-
-# 23. Final Submission Git Tag
-
-The final submission must be tagged:
-
-```text
-PRISM_GENAI_HACKATHON_Y2026
-```
-
-The tag must point to the final commit containing the complete submission materials.
-
-After all code, documentation, presentation references, and demo references are finalized:
-
-```bash
-git add .
-git commit -m "Finalize Samsung PRISM Theme 4 submission"
-git push origin main
-```
-
-Create the required annotated tag:
-
-```bash
-git tag -a PRISM_GENAI_HACKATHON_Y2026 -m "Samsung PRISM GenAI Hackathon 2026 final submission"
-```
-
-Push the tag:
-
-```bash
-git push origin PRISM_GENAI_HACKATHON_Y2026
-```
-
-Verify that the tag points to the final commit:
-
-```bash
-git rev-parse HEAD
-```
-
-```bash
-git rev-parse PRISM_GENAI_HACKATHON_Y2026
-```
-
-The two commit hashes must be identical.
-
-The tagged commit is the version intended for judging.
-
----
-
-# 24. Repository Security
-
-The repository intentionally excludes local and sensitive files through `.gitignore`.
-
-The following types of files are not committed:
-
-```text
-.env
-Virtual environments
-Python caches
-IDE configuration
-macOS metadata
-Local databases
-Generated indexes
-Model artifacts
-Temporary files
-Logs
-```
-
-The repository provides:
-
-```text
-.env.example
-```
-
-instead of storing actual API credentials.
-
-Never commit API keys, passwords, tokens, or other secrets.
-
----
-
-# 25. Project Status
+# 23. Project Status
 
 ```text
 Project: PRISM Streaming Live RAG
@@ -1148,7 +1069,7 @@ PRISM_GENAI_HACKATHON_Y2026
 
 ---
 
-# 26. Acknowledgement
+# 24. Acknowledgement
 
 This project was developed as a submission for the Samsung PRISM Generative AI Hackathon — 3rd Edition 2026–27, Theme 4: Streaming Live RAG.
 
