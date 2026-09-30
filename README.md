@@ -1012,7 +1012,7 @@ https://github.com/sreeranga-chippala/PRISM-Streaming-Live-Rag
 
 PPT / PDF:
 
-> https://drive.google.com/file/d/1R6q5jXMekxLIwMNYzreYwKo8ms-nroSx/view?usp=sharing
+> https://drive.google.com/file/d/1oqNGdUlzl7QgviHiHKPISk519JP4ufYk/view?usp=sharing
 
 The presentation covers:
 
