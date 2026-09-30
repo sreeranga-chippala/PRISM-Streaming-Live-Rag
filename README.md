@@ -905,7 +905,7 @@ Session state allows the system to maintain relevant conversational context acro
 
 The system exposes grounding, citation, retrieval, latency, and telemetry information for evaluating the behavior of the RAG pipeline.
 
-#### Agentic Monitoring
+## Agentic Monitoring
 
 The system includes an event-driven **MonitorAgent** implemented using
 LangGraph to continuously observe the live interaction and maintain
