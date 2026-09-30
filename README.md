@@ -986,7 +986,7 @@ https://github.com/sreeranga-chippala/PRISM-Streaming-Live-Rag
 
 PPT / PDF:
 
-> ADD_FINAL_PPT_LINK_HERE
+> https://drive.google.com/file/d/1R6q5jXMekxLIwMNYzreYwKo8ms-nroSx/view?usp=sharing
 
 The presentation covers:
 
@@ -1015,10 +1015,13 @@ Maximum duration:
 
 Demo video:
 
-> ADD_DEMO_VIDEO_LINK_HERE
+> https://drive.google.com/file/d/1g6cHM77edIvQaEF8FaN3u1NzHdD26Sdb/view?usp=sharing
 
 The video demonstrates the working prototype and the primary Streaming Live RAG workflow.
 
+AI Disclosure Form :
+
+>https://docs.google.com/document/d/1NXWfWIZ5ci8NRQaw4Or5uDcvnT56tayE/edit?usp=sharing&ouid=109024579890428693348&rtpof=true&sd=true
 ---
 
 # 21. Team
