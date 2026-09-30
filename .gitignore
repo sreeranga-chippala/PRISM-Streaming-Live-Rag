@@ -1,57 +1,156 @@
-# Environment variables
+# ============================================================
+# ENVIRONMENT / SECRETS
+# ============================================================
+
 .env
 .env.*
 !.env.example
 
-# Python
+
+# ============================================================
+# PYTHON
+# ============================================================
+
 __pycache__/
 *.py[cod]
 *$py.class
+*.pyo
+*.pyd
+
+# Python packaging
+build/
+dist/
+*.egg-info/
+.eggs/
 
 # Virtual environments
 .venv/
 venv/
 env/
+ENV/
 
-# Jupyter
+# Python tooling
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.pytype/
+.pyre/
+
+# Coverage
+.coverage
+.coverage.*
+htmlcov/
+coverage.xml
+
+
+# ============================================================
+# JUPYTER
+# ============================================================
+
 .ipynb_checkpoints/
 
-# IDE / Editor
+
+# ============================================================
+# IDE / EDITOR
+# ============================================================
+
 .vscode/
 .idea/
+*.swp
+*.swo
+*~
 
+
+# ============================================================
 # macOS
-.DS_Store
+# ============================================================
 
-# Logs
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+
+# ============================================================
+# LOGS
+# ============================================================
+
 *.log
 logs/
+log/
 
-# Generated / temporary data
-data/processed/*
-data/raw/documents/*
 
-# Generated indexes / model artifacts
-*.index
-*.faiss
-*.pkl
+# ============================================================
+# LOCAL DATABASES
+# ============================================================
 
-# Local databases
 *.db
 *.sqlite
 *.sqlite3
 
-# Temporary files
+
+# ============================================================
+# GENERATED DATA
+# ============================================================
+
+data/processed/*
+data/raw/documents/*
+
+# Keep directory structure
+!data/processed/.gitkeep
+!data/raw/documents/.gitkeep
+
+
+# ============================================================
+# ML / RAG GENERATED ARTIFACTS
+# ============================================================
+
+*.index
+*.faiss
+*.pkl
+*.pickle
+*.joblib
+*.bin
+*.safetensors
+
+# Model/cache directories
+models/
+checkpoints/
+artifacts/
+embeddings/
+indexes/
+
+
+# ============================================================
+# TEMPORARY FILES
+# ============================================================
+
 *.tmp
 *.temp
+*.cache
 
-# Build / distribution
-build/
-dist/
-*.egg-info/
+tmp/
+temp/
+.cache/
 
-# Testing / coverage
-.coverage
-htmlcov/
-.pytest_cache/
-.env
+
+# ============================================================
+# STREAMLIT
+# ============================================================
+
+.streamlit/secrets.toml
+
+
+# ============================================================
+# DOCKER
+# ============================================================
+
+docker-compose.override.yml
+
+
+# ============================================================
+# OS / TOOL GENERATED FILES
+# ============================================================
+
+*.pid
+*.seed
